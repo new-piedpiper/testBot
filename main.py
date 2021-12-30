@@ -11,6 +11,7 @@ client=commands.Bot(intents=intents,command_prefix='!')
 guild_id= #initialise with guild_id
 channel_id= #initialise with channel id
 role_id= #initialise with roll_id
+TOKE= #initialise with BotAuth TOKEN
 
 #helper functions
 #add names to the database
@@ -86,4 +87,4 @@ async def retrieve_name(ctx):
     await ctx.channel.send("You are not authorised to perform this operation")
 
 #makeing connection with bot user
-client.run('OTI1NDYwNDc4NDg0OTU5MjMz.YctcPA.R4qCUvY1hZXpPnE3o2vYfbVB6aA')
+client.run(TOKEN)
